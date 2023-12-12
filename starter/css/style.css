@@ -209,3 +209,44 @@ h2 {
 #contact ul li a {
   text-decoration: none;
 }
+
+@media only screen and (max-width:970px) {
+    header nav ul li {
+     display: none;
+    }
+
+    .page-section { 
+      flex-direction: column;
+    }
+
+    h2 {
+      display: block;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      'surf-report' 
+      'led-wall calculator'
+      'pastel-puzzles run-buddy'
+      }
+      }
+}
+
+@media only screen and (max-width:600px) {
+  .projects {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'surf-report'
+    'led-wall' 
+    'calculator'
+    'pastel-puzzles' 
+    'run-buddy'
+    }
+    }
+
+   
