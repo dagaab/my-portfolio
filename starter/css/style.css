@@ -9,15 +9,184 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+header {
+  display: flex;
+  align-items: center;
+  background: rgb(46, 45, 45);
+  height: 150px;
+  max-width: 95%;
 }
 
-p {
-  margin: 0;
+.photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 90px;
+  border: 5px solid rgb(109, 183, 204);
+  margin-right: -5px;
 }
+
+
+
+h1 {
+  background: rgb(109, 183, 204);
+  color: rgb(20, 42, 89);
+  padding-left: 60px;
+  padding-right: 5px;
+
+}
+
+nav {
+  padding-right: 20px;
+  position: absolute;
+  right: 70px;
+}
+
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 10px;
+  
+}
+
+nav ul li a {
+  color:rgb(83, 166, 189);
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  border-bottom: 2px solid rgb(109, 183, 204);
+}
+
+.hero-banner {
+  position: relative;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-color: rgba(51, 91, 120, 0.692);
+  background-blend-mode: multiply;
+  background-size: cover;
+  filter: (100%);
+  height: 400px;
+  max-width: 95%;
+  margin-bottom: 20px;
+}
+
+.hero-banner h2 {
+  background: rgb(109, 183, 204);
+  width: 300px;
+  float: right;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  font-size: 30px;
+  padding-left: 5px;
+
+}
+
+.page-wrapper {
+  display: flexbox;
+}
+
+.page-section {
+  flex-direction: row;
+}
+
+h2 {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+  text-align: end;
+  color: rgb(20, 42, 89);
+  margin-right: 5px;
+}
+
+#about p {
+  display: inline-block;
+  width: 80%;
+  border-left: 3px solid rgb(20, 42, 89);
+  padding-left: 20px;
+  color: rgb(20, 42, 89);
+}
+
+.projects {
+  display: inline-grid;
+  grid-template-rows: 400px 200px 200px;
+  grid-template-columns: 500px 500px;
+  grid-template-areas: 
+  'surf-report surf-report'
+  'led-wall calculator'
+  'pastel-puzzles run-buddy'
+}
+
+.projects {
+  border-left: 3px solid rgb(20, 42, 89);
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.project {
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 5px;
+  border: 5px solid rgb(109, 183, 204);
+  position: relative;
+
+}
+
+#surf-report:hover, #led-wall:hover, #calculator:hover, #pastel-puzzles:hover, #run-buddy:hover {
+  opacity: 1;
+}
+
+#surf-report {
+  grid-area: surf-report;
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  opacity: 0.5;
+}
+
+#led-wall {
+  grid-area: led-wall;
+  background-image: url("../images/02-portfolio-1.jpg");
+  opacity: 0.5;
+}
+
+#calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+  opacity: 0.5;
+}
+
+#pastel-puzzles {
+  grid-area: pastel-puzzles;
+  background-image: url("../images/02-portfolio-3.jpg");
+  opacity: 0.5;
+}
+
+#run-buddy {
+  grid-area: run-buddy;
+  background-image: url("../images/02-run-buddy.jpg");
+  opacity: 0.5;
+}
+
+.text {
+  position: absolute;
+  bottom: 15px;
+  background-color: rgb(109, 183, 204);
+  padding: 15px 10px 15px 10px
+}
+
+.text p {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.text h3 {
+  margin: 0px;
+}
+
+.page-section ul li {
+  display: inline-block;
+  
+}
+
+
