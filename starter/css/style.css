@@ -8,7 +8,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
+/* header and navigation */
 header {
   display: flex;
   align-items: center;
@@ -81,11 +81,12 @@ nav ul li a {
 
 }
 
+/* main content */
 .page-wrapper {
   display: flexbox;
 }
 
-.page-section {
+.page-section { 
   flex-direction: row;
 }
 
@@ -98,6 +99,7 @@ h2 {
   margin-right: 5px;
 }
 
+/* About section */
 #about p {
   display: inline-block;
   width: 80%;
@@ -106,6 +108,7 @@ h2 {
   color: rgb(20, 42, 89);
 }
 
+/* Work section */
 .projects {
   display: inline-grid;
   grid-template-rows: 400px 200px 200px;
@@ -134,6 +137,7 @@ h2 {
 
 }
 
+/* makes the picture clear */
 #surf-report:hover, #led-wall:hover, #calculator:hover, #pastel-puzzles:hover, #run-buddy:hover {
   opacity: 1;
 }
@@ -184,9 +188,24 @@ h2 {
   margin: 0px;
 }
 
-.page-section ul li {
+/* contact section */
+#contact ul {
   display: inline-block;
-  
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-left: 3px solid rgb(20, 42, 89);
+  margin-top: 20px;
 }
 
+#contact ul li {
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(20, 42, 89);
+  margin-left: 20px;
+  font-size: 20px;
+}
 
+#contact ul li a {
+  text-decoration: none;
+}
